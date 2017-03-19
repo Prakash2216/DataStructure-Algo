@@ -19,12 +19,7 @@ import java.util.Arrays;
  */
 public class LargestPermutationAfterKswap {
 
-	public void swap(int a, int b) {
-		int t = a;
-		a=b;
-		b=t;
-	}
-	public void largestPermutationKswap(int []arr, int n, int k) {
+		public void largestPermutationKswap(int []arr, int n, int k) {
 		int []pos = new int[n+1];
 		
 		for(int i=0; i<n; i++) {
@@ -40,7 +35,7 @@ public class LargestPermutationAfterKswap {
 			pos[arr[i]]=pos[n-i];
 			pos[n-i] =i;
 			
-			//swap(arr[temp], arr[i]);
+			//swap
 			int l = arr[temp];
 			arr[temp] = arr[i];
 			arr[i] = l;
