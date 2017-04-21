@@ -3,18 +3,26 @@ package com.ds.algo.array;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+/**
+ * .Find product of distinct prime factor of all numbers .
+Ex- 1
+3
+10
+12
+7
+prime factor of 10 = 2*5
+prime factor of 12 = 2*2*3
+prime factor of 7 = 7
 
+SO distinct prime factor is 2*5*3*7 = 210
+output -210
+
+
+ * @author 1019270
+ *
+ */
 public class ProductOfAllDistinctPrimeFactorsOfGivenNo {
 
-	private int findMax(int []arr){
-		int l = arr.length;
-		int m =Integer.MIN_VALUE;
-		for(int i=0; i<l; i++){
-			if(m<arr[i])
-				m=arr[i];
-		}
-		return m;
-	}
 	private void findPrimeFactors(int []arr){
 		Set<Integer> s = new HashSet<>();
 		
