@@ -31,7 +31,7 @@ public class DFS {
 		depthFirstSearchUtil(v, visited);
 	}
 	
-	// the following code is used for disjoint graph to traverse all the vertices 
+	// the following code we can use for disjoint graph to traverse all the vertices 
 	public void depthFirstSearchForAllVertices(int v){
 		
 		boolean visited[] = new boolean[V];
