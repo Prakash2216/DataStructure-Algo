@@ -14,7 +14,6 @@ public class ShortestPathDijkstra {
 			dist[i] = Integer.MAX_VALUE;
 			sptSet[i] = false;
 		}
-		
 		dist[src]=0;
 		
 		for(int count=0; count<V-1; count++) {
@@ -39,14 +38,19 @@ public class ShortestPathDijkstra {
 			System.out.println(v+" "+dist[v]);
 		}
 	}
+		
+	private void print(int[] dist) {
+		for(int i=0; i<V; i++)
+			System.out.print(dist[i]+" ");		
+	}
 	private int minDist(int[] dist, boolean[] sptSet) {
 		int min = Integer.MAX_VALUE;
 		int minIndex=-1;
-		for(int i=0; i<V; i++) {
-			if(!sptSet[i] && dist[i]<min) {
+		for(int i=0; i<V; i++){
+			if(!sptSet[i] && dist[i]<min){
 				min=dist[i];
-				minIndex = i;
-			}				
+				minIndex=i;
+			}
 		}
 		return minIndex;
 	}
