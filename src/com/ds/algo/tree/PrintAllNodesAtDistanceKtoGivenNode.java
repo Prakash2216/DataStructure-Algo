@@ -7,10 +7,10 @@ package com.ds.algo.tree;
  */
 public class PrintAllNodesAtDistanceKtoGivenNode {
 
-	private void printNodeAtKdistance(Node root){
+	private void printNodeAtKdistance(Node root, int node, int k){
 		if(root == null)
 			return;
-		printNodeAtKdistUtil(root, 5, 2);
+		printNodeAtKdistUtil(root, node, k);
 	}
 	private int printNodeAtKdistUtil(Node root, int target, int k) {
 		
@@ -73,8 +73,11 @@ public class PrintAllNodesAtDistanceKtoGivenNode {
 		root.left.left.left = new Node(11);
 		root.right.right = new Node(12);
 		
+		// print all node at distance k from node.
+		int k = 2;
+		int node =5;
 		PrintAllNodesAtDistanceKtoGivenNode obj = new PrintAllNodesAtDistanceKtoGivenNode();
-		obj.printNodeAtKdistance(root);
+		obj.printNodeAtKdistance(root, node, k);
 	}
 
 }
