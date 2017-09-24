@@ -7,9 +7,10 @@ public class ReverseLL {
 		
 		ListNode node = reverseRec(head.next);
 		
-		ListNode temp = head.next;
-		temp.next = head;
-		head.next = null;
+		//ListNode temp = head.next;
+		//temp.next = head;
+		 head.next.next = head;
+		 head.next = null;
 		return node;
 	}
 	
@@ -27,6 +28,7 @@ public class ReverseLL {
 		head.next.next.next.next = new ListNode(5);
 		
 		ListNode ptr = reverseRec(head);
+		print(ptr);
 	}
 
 }
