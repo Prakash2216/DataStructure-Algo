@@ -9,6 +9,7 @@ package com.ds.algo.interview.Adobe;
  */
 public class CircularlyArrangedNPetrolPumpTour {
 
+	// tuple class contains the petrol at the current petrol pump and distance to next petrol pump.
 	static class Petrol
 	{
 		int petrol;
@@ -21,6 +22,13 @@ public class CircularlyArrangedNPetrolPumpTour {
 		}
 	}
 	
+	/**
+	 * we choose first petrol pump at index 0 as the start point and end at index 1.
+	 * and keep traversing te petrol pump at all the index if end reaches to start that means we cover all the petrol pump.  
+	 * @param petArr 
+	 * @param length
+	 * @return
+	 */
 	private static int findStartNode(Petrol[] petArr, int length) {
 		int start = 0;
 		int end = 1;
