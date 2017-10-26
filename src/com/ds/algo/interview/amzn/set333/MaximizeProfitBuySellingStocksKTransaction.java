@@ -26,7 +26,7 @@ public class MaximizeProfitBuySellingStocksKTransaction {
 		int l = prices.length;
 		int profit[][] = new int[k+1][l];
 		
-		
+		System.out.println("Profit.length "+profit.length);
 		for(int i=1; i<profit.length; i++) {
 			for(int j=1; j<profit[0].length; j++) {
 				int max=0;
