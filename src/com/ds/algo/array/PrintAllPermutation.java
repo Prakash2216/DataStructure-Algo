@@ -18,7 +18,7 @@ public class PrintAllPermutation {
 		}
 	}
 	public static void main(String[] args) {
-		String name = "ABBC";
+		String name = "ABC";
 		char [] arr = name.toCharArray();
 		int r = arr.length-1;
 		PrintAllPermutation obj = new PrintAllPermutation();

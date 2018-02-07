@@ -38,8 +38,11 @@ public class LevelOrderTraversal {
 		
 		if(root == null)
 			return;
-		if(i==0)
+		if(i==0) 
+		{
 			System.out.print(root.data+" ");
+			return;
+		}
 		printGivenLevel(root.left, i-1);
 		printGivenLevel(root.right, i-1);
 	}

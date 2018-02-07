@@ -47,7 +47,7 @@ public class LargestPermutationAfterKswap {
 		int [] arr = {4,5,2,1,3};
 		int n= arr.length;
 		LargestPermutationAfterKswap obj = new LargestPermutationAfterKswap();
-		obj.largestPermutationKswap(arr, n, 3);
+		obj.largestPermutationKswap(arr, n, 2);
 		
 		for(int i=0; i<n; i++) {
 			System.out.print(arr[i]+" ");
