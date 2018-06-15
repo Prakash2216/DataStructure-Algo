@@ -58,7 +58,7 @@ public class Diametre_tree {
    
      /* DFS from a random node and then see
      farthest node X from it*/
-     dfs(2, n, adj);
+     dfs(1, n, adj);
    
      /* DFS from X and check the farthest node
      from it */
