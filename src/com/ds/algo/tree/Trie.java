@@ -33,6 +33,7 @@ public class Trie {
 	}
 	//Method to create Trie Recursively
 	public static void createTrieUtilRecursive(String name, TrieNode current, int index){
+		
 		if(index == name.length())
 			return;
 		
@@ -41,14 +42,19 @@ public class Trie {
 		if(node == null){
 			node = new TrieNode();
 			current.children.put(ch, node);
+			if(index == name.length()-1)
+				current.endOfWord = true;
 		}			
-		current.endOfWord = true;
+		
 		createTrieUtilRecursive(name, node, index+1);
 	}
 	public static void createTrie(String [] names, TrieNode root){
-		/*for(int i=0; i<names.length; i++){
+		/*
+		for(int i=0; i<names.length; i++){
 			createTrieUtil(names[i], root);
-		}*/
+		}
+		*/
+		
 		for(int i=0; i<names.length; i++){
 			createTrieUtilRecursive(names[i], root, 0);
 		}
