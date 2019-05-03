@@ -1,5 +1,13 @@
 package com.ds.algo.mathematical;
-
+/**
+ * 
+ * Date : 3/5/2019
+ * @author Prakash Singh
+ *
+ * Find the LCM of the two given numbers a and b.
+ * 
+ * Approach : Since we know that lcm(a, b)*gcd(a, b) = (a*b).
+ */
 public class LCM 
 {
 	public static int gcd(int a, int b)
@@ -13,10 +21,18 @@ public class LCM
 				
 	}
 	
+	public static int gcd1(int a, int b)
+	{
+		return (a == 0)? b : gcd(b, b%a);
+	}
 	public static void main(String[] args)
 	{
-		System.out.println(gcd(3, 0));
-		System.out.println("LCM of 3 and 4 is : "+(3*4)/gcd(3, 4));
+		System.out.println(gcd1(3, 0));
+		int gcd = gcd1(3, 0);
+		if(gcd != 0)
+			System.out.println("LCM of 3 and 0 is : "+(3*0)/gcd1(3,0));
+		else
+			System.out.println(0);
 	}
 
 }
