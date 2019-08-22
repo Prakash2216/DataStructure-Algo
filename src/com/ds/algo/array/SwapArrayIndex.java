@@ -6,7 +6,7 @@ package com.ds.algo.array;
  *This question was asked in an interview.
  *
  *Given a unique positive integer array with elements ranging from 0 to length-1.
- *WAP to interchange the element value and its corresponding inxed value.
+ *WAP to interchange the element value and its corresponding indexed value.
  *
  *Ex. input :	[3, 2, 0, 1]	here a[0] = 3 in iput so interchaged a[3]=0; similarly for a[1]=2 the in output a[2]=1;
  *	  output :	[2, 3, 1, 0] 
@@ -19,7 +19,7 @@ package com.ds.algo.array;
  *Ex. [7, 6, 5, 4, 0, 1, 2, 3] after exchanging upto like [ ,  ,  , 7, 4 ,  ,  , 0];
  *once we reach the index 4 has value 0 again when we go to index 0 has value 7 which already been processed. 
  *so solving that at the start of process we choose that value and mark it with negative no to remember as starting point. if at all before traversing all
- *if we reach again to starting point by changing its value, we increament index++ for next element and again mark that index value as starting and proceed further.
+ *if we reach again to starting point by changing its value, we increment index++ for next element and again mark that index value as starting and proceed further.
  */
 public class SwapArrayIndex 
 {
@@ -32,7 +32,7 @@ public class SwapArrayIndex
 			
 			while(count<len)		// jump upto all the elements are processed once
 			{
-				if(a[index] < 0)	// checking if the is loop before processing all the elements
+				if(a[index] < 0)	// checking if there is loop before processing all the elements
 				{
 					a[index]=value; // change that value and check the the count with length if processed the no need to traverse furhter.
 					count++;

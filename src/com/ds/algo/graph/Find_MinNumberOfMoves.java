@@ -1,17 +1,19 @@
 package com.ds.algo.graph;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Queue;
+
 /** 
  * Find the minimum number of moves to move from one cell of Matrix to another.
- * Given a N X N matrix (M) filled with 1 , 0 , 2 , 3 . Find the minimum numbers of moves needed to move from source to destination (sink) . while traversing through blank cells only. You can traverse up, down, right and left.
-A value of cell 1 means Source.
-A value of cell 2 means Destination.
-A value of cell 3 means Blank cell.
-A value of cell 0 means Blank Wall.
+ * Given a N X N matrix (M) filled with 1 , 0 , 2 , 3 . Find the minimum numbers of moves needed to move from source to destination (sink).
+ * while traversing through blank cells only. You can traverse up, down, right and left.
+ * A value of cell 1 means Source.
+ * A value of cell 2 means Destination.
+ * A value of cell 3 means Blank cell.
+ * A value of cell 0 means Blank Wall.
  * 
  * Approach:: first create a graph of each cell as node and boundary between cell as edge and to BFS. 
  */
-import java.util.LinkedList;
-import java.util.Queue;
  
 //class graph for creating graph using adjacency list.
 class Graph{
