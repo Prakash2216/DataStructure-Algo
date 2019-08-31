@@ -80,15 +80,17 @@ public class PrintAllUniqueSortedPermutations
 		
 		// Now iterate through rest of the elements and find
 	    // the smallest character greater than 'first'
-		for(int i = l+1; i<h; i++)
+		for(int i = l+1; i<=h; i++)
+		{
 			if(ch[i] > first && ch[i] < ch[ceilIndex])
 				ceilIndex=i;
+		}
 		return ceilIndex;		
 	}
 	
 	public static void main(String[] args) 
 	{
-		String str = "ABCDC";
+		String str = "12343";
 		printSortedUniquePermutaions(str);
 	}
 

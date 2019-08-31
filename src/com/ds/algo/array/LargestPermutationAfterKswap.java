@@ -1,7 +1,5 @@
 package com.ds.algo.array;
 
-import java.util.Arrays;
-
 /**
  * Given a permutation of first n natural numbers as array and an integer k.
  * Print the lexicographically largest permutation after at most k swaps

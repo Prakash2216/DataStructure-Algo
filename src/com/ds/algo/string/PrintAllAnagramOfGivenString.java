@@ -19,13 +19,22 @@ import java.util.Arrays;
  * @author 1019270
  *
  */
-public class PrintAllAnagramOfGivenString {
+public class PrintAllAnagramOfGivenString 
+{
 	
 	public static void printAnagram(String[] sarr, String str)
 	{
 		char [] carr = str.toCharArray();
 		Arrays.sort(carr);
-		System.out.println(carr);
+		//System.out.println(carr);
+		String scarr = String.valueOf(carr);
+		for(String s : sarr)
+		{
+			char [] temp = s.toCharArray();
+			Arrays.sort(temp);
+			if(scarr.equals(String.valueOf(temp)))
+				System.out.println(s);
+		}
 	}
 	public static void main(String[] args) 
 	{

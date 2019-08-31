@@ -5,8 +5,8 @@ public class InsertionSort {
 	public void _insertionSort(int [] arr, int n){
 		int temp;
 		int j;
-		for(int i=1; i<n; i++){
-			
+		for(int i=1; i<n; i++)
+		{			
 			temp = arr[i];
 			
 			for(j=i; j>0 && arr[j-1] > temp; j--)

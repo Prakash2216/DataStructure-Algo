@@ -96,7 +96,7 @@ public class LRU {
 	public static void main(String[] args) {
 		
 		HashMap<Integer, DLL>map = new HashMap<>();
-		Cache cache = new Cache(4);
+		Cache cache = new Cache(4); // creating a cache of size 4.
 		
 		LRU lru = new LRU();
 		//Let us refer pages 1, 2, 3, 1, 4, 5

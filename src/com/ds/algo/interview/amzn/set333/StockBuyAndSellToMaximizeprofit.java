@@ -57,6 +57,8 @@ public class StockBuyAndSellToMaximizeprofit {
 		}
 	}
 	public static void main(String[] args) {
+		
+		
 		int [] stock = {100, 180, 260, 310, 40, 535, 695};
 		StockBuyAndSellToMaximizeprofit obj = new StockBuyAndSellToMaximizeprofit();
 		obj.maxProfit(stock, stock.length);

@@ -64,12 +64,12 @@ public class WordBreakInSegment
 				
 									
 			}	
-			if(i == size && wb[i] == 1)
-				return 1;
+			/*if(i == size && wb[i] == 1)
+				return 1;*/
 		}
 		
-		for(int p =0 ; p<=size; p++)
-			System.out.print(wb[p]+" ");
+		/*for(int p =0 ; p<=size; p++)
+			System.out.print(wb[p]+" ");*/
 		return wb[size];
 	}
 	

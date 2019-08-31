@@ -37,7 +37,7 @@ public class PrintPowerOfTwo
 		}
 	}
 	public static void main(String[] args) {
-		getPowers(9);
+		getPowers(10);
 	}
 
 }
